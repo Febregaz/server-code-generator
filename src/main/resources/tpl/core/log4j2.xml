@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="OFF">
+    <Properties>
+        <Property name="logdir">${sys:catalina.base}/logs/${projectName}</Property>
+        <Property name="layout">%d{yyyyMMddHHmmss} %p %c{1.} [%t] %m%n</Property>
+    </Properties>
+	<Appenders>
+		<RollingFile name="DEBUGROLLING" fileName="${logdir}/debug" filePattern="${logdir}/debug_%d{yyyy-MM-dd}_%i">
+			<PatternLayout pattern="${layout}" />
+			<Policies>
+				<TimeBasedTriggeringPolicy modulate="true" interval="1" />
+				<SizeBasedTriggeringPolicy size="51200 KB" />
+			</Policies>
+			<DefaultRolloverStrategy max="20" />
+			<Filters>
+				<!-- <ThresholdFilter level="info" onMatch="DENY" onMismatch="NEUTRAL" /> -->
+				<ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY" />
+			</Filters>
+		</RollingFile>
+		<RollingFile name="INFOROLLING" fileName="${logdir}/info" filePattern="${logdir}/info_%d{yyyy-MM-dd-HH-mm}_%i">
+			<PatternLayout pattern="${layout}" />
+			<Policies>
+				<TimeBasedTriggeringPolicy modulate="true" interval="10" />
+				<SizeBasedTriggeringPolicy size="1024 KB" />
+			</Policies>
+			<DefaultRolloverStrategy max="20" />
+			<Filters>
+				<!-- <ThresholdFilter level="warn" onMatch="DENY" onMismatch="NEUTRAL" /> -->
+				<ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY" />
+			</Filters>
+		</RollingFile>
+		<RollingFile name="WARNROLLING" fileName="${logdir}/warn" filePattern="${logdir}/warn_%d{yyyy-MM-dd}_%i">
+			<PatternLayout pattern="${layout}" />
+			<Policies>
+				<TimeBasedTriggeringPolicy modulate="true" interval="1" />
+				<SizeBasedTriggeringPolicy size="10240 KB" />
+			</Policies>
+			<DefaultRolloverStrategy max="20" />
+			<Filters>
+				<ThresholdFilter level="warn" onMatch="ACCEPT" onMismatch="DENY" />
+			</Filters>
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Logger name="${rootPackage}" level="debug">
+			<appender-ref ref="DEBUGROLLING" />
+		</Logger>
+		<Root level="info">
+			<!-- <appender-ref ref="DEBUGROLLING" /> -->
+			<appender-ref ref="INFOROLLING" />
+			<!-- <appender-ref ref="WARNROLLING" /> -->
+		</Root>
+	</Loggers>
+</Configuration>

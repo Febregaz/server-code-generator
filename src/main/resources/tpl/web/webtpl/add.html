@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link id="bs-css" href="../css/bootstrap-cerulean.min.css" rel="stylesheet">
+<link href="../css/charisma-app.css" rel="stylesheet">
+<link href='../plugins/fullcalendar/dist/fullcalendar.css' rel='stylesheet'>
+<link href='../plugins/fullcalendar/dist/fullcalendar.print.css' rel='stylesheet' media='print'>
+<link href='../plugins/chosen/chosen.min.css' rel='stylesheet'>
+<link href='../plugins/colorbox/example3/colorbox.css' rel='stylesheet'>
+<link href='../plugins/responsive-tables/responsive-tables.css' rel='stylesheet'>
+<link href='../plugins/bootstrap-tour/build/css/bootstrap-tour.min.css' rel='stylesheet'>
+<link href='../css/jquery.noty.css' rel='stylesheet'>
+<link href='../css/noty_theme_default.css' rel='stylesheet'>
+<link href='../css/elfinder.min.css' rel='stylesheet'>
+<link href='../css/elfinder.theme.css' rel='stylesheet'>
+<link href='../css/jquery.iphone.toggle.css' rel='stylesheet'>
+<link href='../css/uploadify.css' rel='stylesheet'>
+<link href='../css/animate.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+	<div class="navbar navbar-default" role="navigation">
+		<div class="navbar-inner">
+			<a class="navbar-brand" href="#"> <img alt="Charisma Logo" src="../../img/logo.png" class="hidden-xs" /> <span>${projectName}</span></a>
+			<div class="btn-group pull-right navbar-user">
+				<i class="glyphicon glyphicon-user" style="padding-right: 5px; border-right: dashed 1px;"></i> <a style="cursor: pointer;" title="退出"><i
+					class="glyphicon glyphicon-log-out" style="padding-right: 10px; padding-left: 3px; color: white;"></i></a>
+			</div>
+		</div>
+	</div>
+	<div class="ch-container">
+		<div class="row">
+			<!-- left menu starts -->
+			<div class="col-sm-2 col-lg-2">
+				<div class="sidebar-nav">
+					<div class="nav-canvas">
+						<div class="nav-sm nav nav-stacked"></div>
+						<ul class="nav nav-pills nav-stacked main-menu">
+							<li class="nav-header">${projectName}</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--/span-->
+			<!-- left menu ends -->
+			<noscript>
+				<div class="alert alert-block col-md-12">
+					<h4 class="alert-heading">Warning!</h4>
+					<p>
+						You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> enabled to use this site.
+					</p>
+				</div>
+			</noscript>
+			<div id="content" class="col-lg-10 col-sm-10">
+				<div class="col-md-12 main">
+					<div class="btn-group">
+						<ul class="breadcrumb" style="margin-bottom: 10px; margin-top: 0px;">
+							<li><a href="list.html">${modelVarName}</a></li>
+							<li><a href="#">新增</a></li>
+						</ul>
+					</div>
+					<div style="clear: both;"></div>
+					<form method="post" class="form-horizontal" style="margin-bottom: 50px;">
+						${webFields}
+						<div class="form-group">
+							<div class="col-xs-1 col-xs-offset-2">
+								<button type="submit" class="btn btn-primary">确 定</button>
+							</div>
+							<div class="col-xs-1">
+								<button type="button" class="btn btn-primary" onclick="goBack()">取 消</button>
+							</div>
+						</div>
+					</form>
+					<hr style="margin: 0px; padding: 0px;" />
+					<div class="copyright center-text">&copy;${year} ${author}</div>
+				</div>
+				<!--/#content.col-md-0-->
+			</div>
+			<!--/fluid-row-->
+		</div>
+		<!--/.fluid-container-->
+	</div>
+</body>
+
+<!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<script src="../plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../plugins/validator/bootstrapValidator.min.css" />
+<script type="text/javascript" src="../plugins/validator/bootstrapValidator.min.js"></script>
+<script type="text/javascript" src="../plugins/jquery.form.js"></script>
+<script src="../js/common.js"></script>
+<script src="js/common.js"></script>
+<script src="js/add.js"></script>
+
+</html>

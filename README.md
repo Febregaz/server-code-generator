@@ -25,16 +25,16 @@
 8.数据库、spring配置文件自动生成<br/>
 
 src/main/resources/config.xml文件说明：<br/>
-	a.author：作者名，可以是你自己的名字，也可以是你公司的名字<br/>
-	b.dbDriver:数据库驱动，如果不是mysql，或者pom中的mysql版本不是你想要的，则需要修改pom.xml文件<br/>
-	c.dbUrl/dbUser/dbPswd:数据库的url、用户名、密码，用于连接数据库<br/>
-	d.projectPath：生成的代码的目标位置<br/>
-	e.rootPackage:所有java代码存放在此包下<br/>
-	f.tablePrefix:表前缀，一般是"tb_",比如：tb_this_table<br/>
-	g.tableNameSeparator:数据库表名的分隔符，一般是"_",例如：tb_this_table<br/>
-	h.colNameSeparator:列分隔符，一般是"_",比如：col_name<br/>
-	i.includeTable:需要处理的表，如果只处理部分表，则可以在这里设置，多个表用逗号隔开，优先级低于excludeTable<br/>
-	j.excludeTable:不处理的表，必须指定表名，不能是通配符"*"<br/>
-	k.table:有些表需要做一些特殊的命名，则可以自定义对应的类名，同时也可以指定生成的目标包名<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;a.author：作者名，可以是你自己的名字，也可以是你公司的名字<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;b.dbDriver:数据库驱动，如果不是mysql，或者pom中的mysql版本不是你想要的，则需要修改pom.xml文件<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;c.dbUrl/dbUser/dbPswd:数据库的url、用户名、密码，用于连接数据库<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;d.projectPath：生成的代码的目标位置<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;e.rootPackage:所有java代码存放在此包下<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;f.tablePrefix:表前缀，一般是"tb_",比如：tb_this_table<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;g.tableNameSeparator:数据库表名的分隔符，一般是"_",例如：tb_this_table<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;h.colNameSeparator:列分隔符，一般是"_",比如：col_name<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;i.includeTable:需要处理的表，如果只处理部分表，则可以在这里设置，多个表用逗号隔开，优先级低于excludeTable<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;j.excludeTable:不处理的表，必须指定表名，不能是通配符"*"<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;k.table:有些表需要做一些特殊的命名，则可以自定义对应的类名，同时也可以指定生成的目标包名<br/>
 	
 注：列暂不能自定义名称

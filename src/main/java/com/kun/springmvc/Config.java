@@ -370,12 +370,12 @@ public class Config {
 			case "colNameSeparator" :
 				config.colNameSeparator = node.getTextContent();
 				break;
-			case "generateWebXmlIfNotExist" :
-				config.generateWebXmlIfNotExist = "true".equals(node.getTextContent());
-				break;
-			case "addDependencyToPom" :
-				config.addDependencyToPom = "true".equals(node.getTextContent());
-				break;
+			// case "generateWebXmlIfNotExist" :
+			// config.generateWebXmlIfNotExist = "true".equals(node.getTextContent());
+			// break;
+			// case "addDependencyToPom" :
+			// config.addDependencyToPom = "true".equals(node.getTextContent());
+			// break;
 			// case "webXmlDir" :
 			// config.webXmlDir = node.getTextContent();
 			// break;

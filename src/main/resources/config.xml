@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <config>
-	<!-- 作者，改成自己想要的名字,在生成java代码copyright的时候会用到 -->
+	<!-- 作者，改成自己想要的名字,在生成java/html代码copyright的时候会用到 -->
 	<author>songkun</author>
 	<dbDriver>com.mysql.jdbc.Driver</dbDriver>
 	<dbUrl><![CDATA[jdbc:mysql://localhost/test?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8]]></dbUrl>
-	<dbUser>your_user_name</dbUser>
-	<dbPswd>your_password</dbPswd>
+	<dbUser>songkun</dbUser>
+	<dbPswd>password</dbPswd>
 	<!-- 目标工程的根目录，the absolute path of the project -->
 	<projectPath>/Users/songkun/Documents/workspace/test</projectPath>
 	<!-- 生成的代码对应包前缀(src/main/java下的包名) -->
 	<rootPackage>com.kun.test</rootPackage>
-	<!-- 是否生成web.xml,如果已经存在的了，则不处理 -->
-	<generateWebXmlIfNotExist>true</generateWebXmlIfNotExist>
-	<!-- 是否生成web.xml,如果已经存在的了，则不处理 -->
-	<addDependencyToPom>true</addDependencyToPom>
+	<!-- 数据库前缀，如果指定了数据库前缀，则在生成java类的时候，会去掉前缀 -->
+	<!-- 多个用逗号分隔 -->
+	<tablePrefix>tb_</tablePrefix>
 	<tableNameSeparator>_</tableNameSeparator>
 	<colNameSeparator>_</colNameSeparator>
-	<!-- 需要处理的数据库表，如果不设置，则表示所有表(剔除exclude), include优先于exclude -->
+	<!-- 需要处理的数据库表，如果不设置，则表示所有表(剔除exclude), include优先级低于exclude -->
 	<!-- 多个用逗号分隔 -->
 	<includeTable>*</includeTable>
 	<!-- 不处理的数据库表，优先级高于include，但是，"*"【不】匹配所有(既然不处理何必运行) -->
 	<!-- 多个用逗号分隔 -->
 	<excludeTable></excludeTable>
-	<!-- 数据库前缀，如果指定了数据库前缀，则在生成java类的时候，会去掉前缀 -->
-	<!-- 多个用逗号分隔 -->
-	<tablePrefix>tb_</tablePrefix>
 	<!-- 下面是自定义数据库表对应的xml/pojo/service/controller名称的范例，只需要在特殊处理的时候才有必要设置 -->
 	<!-- 例子: 将表tb_test对应代码中的名字为Example，而不是Test -->
 	<!-- <table tableName="tb_test" className="Example" targetPackage="com.kun.test.example" /> -->

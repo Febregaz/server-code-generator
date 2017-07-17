@@ -46,7 +46,7 @@ public class Config {
 	private String dbPswd;// 数据库密码
 	private String projectPath;// 工程的绝对路径
 	private String srcRootDir = "src/main/java";// 代码根目录
-	private String resourceRootDir = "src/main/resource";// 资源根目录(mybatis的xml文件放在此目录下的mybatis文件夹中)
+	private String resourceRootDir = "src/main/resources";// 资源根目录(mybatis的xml文件放在此目录下的mybatis文件夹中)
 	private boolean overWrite = false;// 是否覆盖已经生成的实体类
 	private String rootPackage = "";// 代码存放的package
 	private String[] includeTable = null;// 需要处理的数据库表

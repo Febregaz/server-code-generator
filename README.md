@@ -6,7 +6,7 @@
 <br/>
 注：生成后的工程是用maven来管理，数据库中的表注释、列注释，都会体现到代码中，所以，在建表的时候，希望尽可能的有详尽的注释
 <br/>
-基本功能：<br/>
+<strong>基本功能：</strong><br/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;1.生成数据库对应的pojo<br/>
 
@@ -24,7 +24,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;8.数据库、spring配置文件自动生成<br/>
 
-src/main/resources/config.xml文件说明：<br/>
+<strong>src/main/resources/config.xml文件说明：</strong><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;1.author：作者名，可以是你自己的名字，也可以是你公司的名字<br/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;2.dbDriver:数据库驱动，如果不是mysql，或者pom中的mysql版本不是你想要的，则需要修改pom.xml文件<br/>

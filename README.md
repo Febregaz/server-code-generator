@@ -12,7 +12,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;2.生成mybatis的mapper xml<br/>
 
-&nbsp;&nbsp;&nbsp;&nbsp;3.生成dao层代码(放置在data包下，因为mybatis官方取名为data，所以，没有写成dao/mapper报名)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;3.生成dao层代码(放置在data包下，因为mybatis官方取名为data，所以，没有写成dao/mapper包名)<br/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;4.生成service层代码<br/>
 

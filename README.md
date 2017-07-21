@@ -7,7 +7,7 @@
 注：生成后的工程是用maven来管理，数据库中的表注释、列注释，都会体现到代码中，所以，在建表的时候，希望尽可能的有详尽的注释
 <br/>
 
-<font color="red"><strong>基本功能：</strong></font><br/>
+<strong>基本功能：</strong><br/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;1.生成数据库对应的pojo<br/>
 

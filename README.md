@@ -54,7 +54,7 @@
 
 <strong>运行后台：</strong><br/>
 
-&nbsp;&nbsp;&nbsp;&nbsp;1.eclipse：将生成的工程以maven工程的形式导入；idea：file->open<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;1.eclipse：import->Existing Maven Projects；idea：file->open<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;2.等待maven下载依赖的jar包<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;3.运行 maven clean install<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;4.将war包放入tomcat的webapps中,或者修改tomcat的conf/server.xml<br/>

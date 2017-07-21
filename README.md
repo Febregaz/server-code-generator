@@ -1,4 +1,4 @@
-# server-code-generate
+# server-code-generator
 
 
 

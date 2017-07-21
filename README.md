@@ -55,9 +55,9 @@
 <strong>运行后台：</strong><br/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;1.eclipse：import->Existing Maven Projects；idea：file->open<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;2.等待maven下载依赖的jar包<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;2.等待maven下载依赖的jar包(开始会报错，maven下完jar包就好了)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;3.运行 maven clean install<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;4.将war包放入tomcat的webapps中,或者配置tomcat的conf/server.xml的&lt;Context doc="" path=""&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;4.将war包放入tomcat的webapps中,或者配置tomcat的conf/server.xml的&lt;Context doc="" path=""/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;5.启动tomcat<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;6.输入地址：http://localhost:端口号/war包名字/ ，比如：http://localhost:8080/test/，<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果是ROOT.war，则不用输入war包名字，端口以tomcat中conf/server.xml配置的端口为准<br/>

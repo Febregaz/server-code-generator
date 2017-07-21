@@ -55,7 +55,7 @@
 <strong>运行后台：</strong><br/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;1.等待maven下载依赖的jar包<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;2.运行 maven clean<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;2.运行 maven clean install<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;3.将war包放入tomcat的webapps中,或者修改tomcat的conf/server.xml<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;4.启动tomcat<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;5.输入地址：http://localhost:8080/ ，以tomcat中conf/server.xml的端口为准<br/>

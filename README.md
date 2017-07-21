@@ -4,7 +4,7 @@
 
 给定一个数据库，自动生成后台代码(spring mvc/mybatis/jquery/bootstrap)，同时能够生成一个简单的后台对应的页面
 <br/>
-注：生成后的工程是用maven来管理；<strong>数据库中的表注释、列注释，都会体现到代码中，所以，在建表的时候，最好有详尽的注释</strong>
+注：生成后的工程是用maven来管理；<strong>数据库中的表注释、列注释,都会体现到代码中,所以,在建表的时候,最好有详尽的注释</strong>
 <br/>
 
 <strong>基本功能：</strong><br/>

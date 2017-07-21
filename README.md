@@ -25,6 +25,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;8.数据库、spring配置文件自动生成<br/>
 
 <strong>src/main/resources/config.xml文件说明：</strong><br/>
+
 &nbsp;&nbsp;&nbsp;&nbsp;1.author：作者名，可以是你自己的名字，也可以是你公司的名字<br/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;2.dbDriver:数据库驱动，如果不是mysql，或者pom中的mysql版本不是你想要的，则需要修改pom.xml文件<br/>
@@ -50,7 +51,7 @@
 注：列暂不能自定义名称
 
 
-<strong>运行后台：</strong><br/><br/>
+<strong>运行后台：</strong><br/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;1.等待maven下载依赖的jar包<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;2.运行 maven clean<br/>

@@ -30,12 +30,12 @@
      * @param {Array} path
      * @returns {String}
      */
-    function toName(path) {
+    function toName(path, isArray) {
         var array = map.call(path, function(value) {
             return '[' + value + ']';
         });
         array[0] = path[0];
-        if(path.length > 1){
+        if(path.length > 1 && !isArray){
         		array[path.length -1] = '.' + path[path.length -1]
         }
         return array.join('');
@@ -50,7 +50,7 @@
         var form = new FormData();
         var cb = function(node, value, key, path) {
             var type = getType(value);
-
+            var isArray = getType(node) === 'Array';
             switch (type) {
                 case 'Array':
                     break; // step into
@@ -59,20 +59,20 @@
                 case 'FileList':
                     forEach.call(value, function(item, index) {
                         var way = path.concat(index);
-                        var name = toName(way);
+                        var name = toName(way, false);
                         form.append(name, item);
                     });
                     return true; // prevent step into
                 case 'File':
-                    var name = toName(path);
+                    var name = toName(path, false);
                     form.append(name, value);
                     return true; // prevent step into
                 case 'Blob':
-                    var name = toName(path);
+                    var name = toName(path, false);
                     form.append(name, value, value.name);
                     return true; // prevent step into
                 default:
-                    var name = toName(path);
+                    var name = toName(path, isArray);
                     form.append(name, value);
                     return true; // prevent step into
             }

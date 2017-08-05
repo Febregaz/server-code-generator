@@ -41,7 +41,7 @@ public class Generator {
 		// path(config.xml).");
 		// return;
 		// }
-		Config config = Config.getInstance("/Users/songkun/Documents/workspace/code-generator/src/main/resources/config.xml");
+		Config config = Config.getInstance("config.xml");
 		// Config config =
 		// Config.getInstance("D://workspace/code-generator/src/main/resources/config.xml");
 		if (config == null) {

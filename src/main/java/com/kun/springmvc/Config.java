@@ -26,6 +26,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import com.kun.springmvc.bean.TableClass;
+import com.kun.springmvc.mybatis.Resources;
 
 /**
  * 配置信息
@@ -261,7 +262,7 @@ public class Config {
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		factory.setNamespaceAware(true); // never forget this!
 		DocumentBuilder builder = factory.newDocumentBuilder();
-		Document doc = builder.parse(path);
+		Document doc = builder.parse(Resources.getResourceAsFile(path));
 		NodeList nodeList = doc.getElementsByTagName("config");
 		if (nodeList == null) {
 			System.out.println("no <config> element...");

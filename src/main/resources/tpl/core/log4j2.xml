@@ -17,11 +17,11 @@
 				<ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY" />
 			</Filters>
 		</RollingFile>
-		<RollingFile name="INFOROLLING" fileName="${logdir}/info" filePattern="${logdir}/info_%d{yyyy-MM-dd-HH-mm}_%i">
+		<RollingFile name="INFOROLLING" fileName="${logdir}/info" filePattern="${logdir}/info_%d{yyyy-MM-dd}_%i">
 			<PatternLayout pattern="${layout}" />
 			<Policies>
-				<TimeBasedTriggeringPolicy modulate="true" interval="10" />
-				<SizeBasedTriggeringPolicy size="1024 KB" />
+				<TimeBasedTriggeringPolicy modulate="true" interval="1" />
+				<SizeBasedTriggeringPolicy size="51200 KB" />
 			</Policies>
 			<DefaultRolloverStrategy max="20" />
 			<Filters>

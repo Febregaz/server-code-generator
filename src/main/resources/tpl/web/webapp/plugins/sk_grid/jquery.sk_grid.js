@@ -274,7 +274,7 @@
                     } else if (row[col.field] != null) {
                         formatterResult = row[col.field];
                     }
-                    if (formatterResult === undefined || formatterResult == null || formatterResult == '') {
+                    if (formatterResult === undefined || formatterResult == null || formatterResult === '') {
                         formatterResult = '&nbsp;';
                     }
                     bodyHtml += '<td class="' + getCellClass(rows.length, rowIndex, showCount, showNumber ? colIndex + 1 : colIndex) +

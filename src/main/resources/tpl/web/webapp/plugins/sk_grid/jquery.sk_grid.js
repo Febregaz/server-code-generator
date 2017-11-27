@@ -173,7 +173,7 @@
     };
     // 工具栏“列”按钮
     var bindColToolEvent = function(thiz) {
-        $('.sk-grid-tool-bar-col input[type="checkbox"]').off('click').on('click', function(e) {
+        $(thiz).find('.sk-grid-tool-bar-col input[type="checkbox"]').off('click').on('click', function(e) {
             var params = thiz.data(pluginName);
             var field = $(this).val();
             if ($.isArray(params.columns)) {
